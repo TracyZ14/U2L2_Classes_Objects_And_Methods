@@ -73,6 +73,14 @@ public class Rectangle
     }
 
 
+    // Calculates and returns the perimeter of the Rectangle
+    public int calculatePerimeter()
+    {
+        int perimeter = 2 * (length + width);
+        return perimeter;
+    }
+
+
     // Calculates and returns the area of the Rectangle
     public int calculateArea()
     {

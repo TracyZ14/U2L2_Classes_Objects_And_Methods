@@ -15,8 +15,7 @@ public class GeoLocation
         return coords;
     }
 
-    public void printCoords()
-    {
+    public void printCoords() {
         System.out.println(getCoords());
     }
 }
