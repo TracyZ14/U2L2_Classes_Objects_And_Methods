@@ -68,6 +68,7 @@ public class U2L2Runner {
         System.out.println("The total area that will need seeding is " + rectAreaSum + " square feet.");
         */
 
+        /*
         Scanner s = new Scanner(System.in);
         System.out.println("How many pieces of lumber do you need for the home you are building?");
         String answer1 = s.nextLine();
@@ -78,7 +79,13 @@ public class U2L2Runner {
         System.out.println("What is the tax rate for your area?");
         String answer3 = s.nextLine();
         double taxRate = Double.parseDouble(answer3);
-        final double lumberPrice = 11.50;
-        final double windowPrice = 25.75;
+        ConstructionPricer price = new ConstructionPricer(11.50, 25.75, taxRate);
+        double totalMaterialsCost = price.materialsCost(piecesOfLumber, numberOfWindows);
+        double totalAfterTax = price.totalWithTax(totalMaterialsCost);
+        System.out.println();
+        System.out.println("Total Materials Cost: $" + totalMaterialsCost);
+        System.out.println("Grand Total after Tax: $" + totalAfterTax);
+        s.close();
+        */
     }
 }
